@@ -4,3 +4,29 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
  }
  
+#img_logo{
+    background-image: url(../images/logo/Booki.png);
+    background-repeat: no-repeat;
+    width: 191px;
+    height: 90px;
+    padding: 0;
+    margin-left: 30px;
+}
+
+#hebergement{
+    margin-left: 2%;
+    background-color: rgb(228, 226, 222);
+    width: 50%;
+    height: 400px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.cadre_hebergement{
+    border: 3px;
+    width: 20%;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom:  20px;
+}
