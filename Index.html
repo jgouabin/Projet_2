@@ -9,35 +9,80 @@
     </head>
     <body>
         <!--Header--> 
-        <header>
+        <header class="marge_gauche"  id="id_conteneur_header">
+            <!--Image-->
             <div id="img_logo"></div>
             
+            <!--Menu-->
+            <nav id="id_menu">
+                <ul>
+                    <li>
+                        <a href="#div_hebergements" >Hébergement</a>
+                    </li>
+                    <li>
+                        <a href="#div_activites" >Activités</a>
+                    </li>
+        
+                </ul>
+            </nav>
         </header>
 
         <!--Section 1 Trouvez votre hébergement...-->
-        <section id="Recherche">
+        <section class="marge_gauche" id="sec_Recherche">
+            <!--zone de texte-->
             <h1>Trouvez votre hébergement pour des vacances de rève</h1>
             <p>
                 En plein centre ville ou en pleine nature
             </p>
+            <!--zone de recherche-->
+            <div id="zone_recherche">
+                <form action="" method="get" >
+                    <!--Icone + zone de saisie + zone bouton. Le tout encadré--> 
+                    <div id="id_conteneur_recherche" >
+                        <div id="img_position" ></div>
+                        <div id="id_saisie_recherche">
+                            <input type="Texte" name="saisie_recherche" placeholder="Marseille, France" size="30" autofocus>
+                        </div>
+                        <div id="btn_recherche" >
+                            <input type="submit" name="btn_recherche" value="Rechercher">
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <!--zone de filtres-->
+            <div id="div_filtres">
+
+            </div>
+            <!--Icone plus texte-->
+            <div id="div_nb_logements">
+
+            </div>
         </section>
 
-        <!--Section 2 Hébergement à ....-->
-        <section id="hebergement">
-            <h1>Hébergement à Marseille</h1>
-            <div class="cadre_hebergement" >
-                <div id="img_heb1>"></div>
+        <!--Section 2 Hébergements-->
+        <section class="marge_gauche" id="sec_hebergement">
+
+            <!--sous section Hébergement à... -->
+            <div id="div_hebergements">
+                <h1>Hébergement à Marseille</h1>
+                <div class="cadre_hebergement" >
+                    <div id="img_heb1>"></div>
+                </div>
+            </div>
+           
+            <!--Sous section Les plus populaires-->
+            <div id="div_populaires">
+                <h1>Les plus populaires</h1>
+                <div class="cadre_hebergement" >
+                    <div id="img_heb1>"></div>
+                </div>
             </div>
 
         </section>
 
-        <!--Section 3 Les plus populaires-->
-        <section id="populaires">
-            <h1>Les plus populaires</h1>
-        </section>
-
-        <!--Section 4 Activités à ....-->
-        <section id="activites">
+        <!--Section 3 Activités à ....-->
+        <section class="marge_gauche" id="div_activites">
             <h1>Activités à Marseille</h1>
         </section>
         

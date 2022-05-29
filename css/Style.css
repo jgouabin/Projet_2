@@ -3,6 +3,10 @@
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
  }
+
+ .marge_gauche{
+    margin-left: 4%;
+ }
  
 #img_logo{
     background-image: url(../images/logo/Booki.png);
@@ -12,17 +16,41 @@
     padding: 0;
     margin-left: 30px;
 }
+#img_position{
+    background-image: url(../images/logo/localisation24.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+#id_conteneur_header{
+    display: flex;
+}
+#id_conteneur_recherche{
+    display: flex;
+    height: 40px;
+}
 
-#hebergement{
-    margin-left: 2%;
-    background-color: rgb(228, 226, 222);
-    width: 50%;
-    height: 400px;
+#div_hebergements{
+    
+    background-color: #f2f2f2;
+    width: 61%;
+    height: 500px;
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 30px;
 }
 
+#div_populaires{
+    /*margin-left: 6.2%;*/
+    margin-right: 3.4%;
+    background-color: #f2f2f2;
+    width: 27.8%;
+    height: 500px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
 .cadre_hebergement{
     border: 3px;
     width: 20%;
