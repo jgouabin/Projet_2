@@ -31,14 +31,29 @@
     height: 40px;
 }
 
+#sec_hebergement{
+    display: flex;
+}
+
 #div_hebergements{
-    
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
     width: 61%;
-    height: 500px;
+   /* height: 500px;*/
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 30px;
+}
+#div_hotels{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#img_heb1{
+    background-image: url(../Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 
 #div_populaires{
@@ -52,9 +67,11 @@
     padding-left: 30px;
 }
 .cadre_hebergement{
-    border: 3px;
-    width: 20%;
-    height: 100px;
+    border: 10px;
+    border-color: rgb(89, 9, 9);
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
     padding-top: 10px;
     padding-bottom:  20px;
 }
