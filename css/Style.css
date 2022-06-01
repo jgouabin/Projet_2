@@ -8,6 +8,17 @@
     margin-left: 4%;
  }
  
+ #id_conteneur_header{
+     display: flex;
+     justify-content: space-between;
+     margin-right: 4%;
+ }
+ #id_menu{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+ }
 #img_logo{
     background-image: url(../images/logo/Booki.png);
     background-repeat: no-repeat;
@@ -33,6 +44,7 @@
 
 #sec_hebergement{
     display: flex;
+    justify-content: space-between;
 }
 
 #div_hebergements{
@@ -40,7 +52,6 @@
     flex-direction: column;
     background-color: #f2f2f2;
     width: 61%;
-   /* height: 500px;*/
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 30px;
@@ -61,7 +72,6 @@
     margin-right: 3.4%;
     background-color: #f2f2f2;
     width: 27.8%;
-    height: 500px;
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 30px;
