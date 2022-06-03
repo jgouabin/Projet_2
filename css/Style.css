@@ -7,14 +7,17 @@
  .marge_gauche{
     margin-left: 4%;
  }
- 
+ .conteneur_flex{
+    display: flex;
+ }
+#id_body{
+    font-family: 'Raleway', sans-serif;
+}
  #id_conteneur_header{
-     display: flex;
      justify-content: space-between;
      margin-right: 4%;
  }
  #id_menu{
-    display: flex;
     flex-direction: row;
     width: 200px;
     justify-content: space-between;
@@ -27,28 +30,88 @@
     padding: 0;
     margin-left: 30px;
 }
-#img_position{
-    background-image: url(../images/logo/localisation24.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;
-}
+
+/*
 #id_conteneur_header{
     display: flex;
+}*/
+/*.items {
+    height: 35px;
+    font-weight: bolder;
+    vertical-align: middle;
+}*/
+#zone_recherche{
+    background-color: #DEEBFF;
+    color: black;
+    text-align: center;                
+    width:120px;                
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-#id_conteneur_recherche{
-    display: flex;
+
+.margin_20{
+    margin: 20px;
+}
+
+#img_position{
+    background-color: #DEEBFF;
+    width: 60px;
+    color: black;
+    text-align: center;   
+    margin-top: 12px;   
+    margin-right: 10px;               
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#btn_recherche{
+    background-color: #0065fc;
+    color: white;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    border-width: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+#id_saisie_recherche{
+    text-align: left;
+    padding-left: 10px;
+    border: #F2F2F2 2px solid;
+    font-size: 18px; 
+    font-weight: bold;
     height: 40px;
 }
 
+.icone_filtre{
+    background-color: #DEEBFF;
+    width: 50px;
+    height: 50px;
+    color: #0065fc;
+    text-align: center;   
+    margin-top: 12px;   
+    margin-right: 10px;               
+  /*  border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;*/
+    border-radius: 25px;
+}
+.btn_filtre{
+    background-color: white;
+   /* color: white;*/
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    border: 4px solid #f2f2f2;
+    
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 #sec_hebergement{
-    display: flex;
     justify-content: space-between;
 }
 
 #div_hebergements{
-    display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
     width: 61%;
@@ -57,7 +120,6 @@
     padding-left: 30px;
 }
 #div_hotels{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -77,11 +139,33 @@
     padding-left: 30px;
 }
 .cadre_hebergement{
-    border: 10px;
-    border-color: rgb(89, 9, 9);
+    border: 2px solid rgb(89, 9, 9);
+    /*border-color: rgb(89, 9, 9);*/
     border-radius: 20px;
     width: 300px;
     height: 200px;
     padding-top: 10px;
     padding-bottom:  20px;
+   
+}
+.img_hebergement{
+    width: 250px;
+    height: 125px;
+    /*top: -30;*/
+   /* bottom: -50;*/
+    padding-bottom: 80px;
+    /*margin-top: 30px;*/
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    border: 6px solid rgb(27, 153, 65);
+    background-color: white;
+    /*border-width: 10px;
+    border-color: #650f0f;*/
+   
+}
+
+.legende_heb{
+    
+     -moz-text-align-last: unset;
 }
