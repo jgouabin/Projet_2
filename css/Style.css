@@ -4,11 +4,16 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
  }
 
+ .debug{
+    border: 2px solid rgb(89, 9, 9);
+ }
+
  .marge_gauche{
     margin-left: 4%;
  }
  .conteneur_flex{
     display: flex;
+    position: relative;
  }
 #id_body{
     font-family: 'Raleway', sans-serif;
@@ -31,15 +36,7 @@
     margin-left: 30px;
 }
 
-/*
-#id_conteneur_header{
-    display: flex;
-}*/
-/*.items {
-    height: 35px;
-    font-weight: bolder;
-    vertical-align: middle;
-}*/
+
 #zone_recherche{
     background-color: #DEEBFF;
     color: black;
@@ -83,30 +80,52 @@
     font-weight: bold;
     height: 40px;
 }
+.les_filtres{
+    flex-direction: row;
+    width: 65%;
+  
+   
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.un_filtre{
+   margin-top: 8px;
+   text-align: center;
+   
+}
+.btn_filtre{
+    
+    background-color: white;
+    width: auto;
+    height: 50px;
+ 
+    padding-right: 20px;
+    padding-left: 60px;
+    border: 4px solid #f2f2f2; 
+    border-radius: 25px;
+    
+}
 
 .icone_filtre{
+    position : absolute;
     background-color: #DEEBFF;
     width: 50px;
     height: 50px;
     color: #0065fc;
-    text-align: center;   
+    
+   /* text-align: center;  
     margin-top: 12px;   
     margin-right: 10px;               
-  /*  border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;*/
+    */
+   
+    margin-top: auto;   
+    margin-right: 30px;
+
     border-radius: 25px;
+   
 }
-.btn_filtre{
-    background-color: white;
-   /* color: white;*/
-    width: 180px;
-    height: 50px;
-    text-align: center;
-    border: 4px solid #f2f2f2;
-    
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
+
 #sec_hebergement{
     justify-content: space-between;
 }
@@ -139,8 +158,6 @@
     padding-left: 30px;
 }
 .cadre_hebergement{
-    border: 2px solid rgb(89, 9, 9);
-    /*border-color: rgb(89, 9, 9);*/
     border-radius: 20px;
     width: 300px;
     height: 200px;
@@ -163,9 +180,4 @@
     /*border-width: 10px;
     border-color: #650f0f;*/
    
-}
-
-.legende_heb{
-    
-     -moz-text-align-last: unset;
 }

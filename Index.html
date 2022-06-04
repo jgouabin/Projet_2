@@ -34,7 +34,7 @@
         </header>
 
         <!--Section 1 Trouvez votre hébergement...-->
-        <section class="marge_gauche" id="sec_Recherche">
+        <section class="marge_gauche">
             <!--zone de texte-->
             <h1>Trouvez votre hébergement pour des vacances de rève</h1>
             <p>
@@ -46,7 +46,7 @@
                     <!--Icone + zone de saisie + zone bouton. Le tout encadré--> 
                     <div  class="conteneur_flex margin_20">
             
-                        <div id="img_position"><i class="fas fa-map-marker-alt icon"></i></div>
+                        <div id="img_position"><i class="fas fa-map-marker-alt"></i></div>
                         <div >
                             <input type="Texte" id="id_saisie_recherche" name="saisie_recherche" placeholder="Marseille, France" autofocus>
                         </div>
@@ -58,29 +58,56 @@
                 </form>
             </div>
             <!--zone de filtres-->
-            <div id="div_filtres" class="conteneur_flex">
+            <div class="conteneur_flex les_filtres">
+                
                 <p>Filtres</p>
-                <div  class="icone_filtre margin_20"><i class="fas fa-map-marker-alt icon"></i></div>
-                <div >
-                    <button class="btn_filtre" onclick="alert('Economique !');">Economique</button>
+            
+                <div  class="conteneur_flex un_filtre">
+                    
+                    <div><i class="fas fa-map-marker-alt icone_filtre"></i></div>
+                    <div >
+                        <button class="btn_filtre" onclick="alert('Economique !');">Economique</button>
+                    </div>
                 </div>
-            </div>
-            <!--Icone plus texte-->
-            <div id="div_nb_logements" class="conteneur_flex">
-                <div class="i_position"><i class="fas fa-map-marker-alt icon"></i></div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
+                <div  class="conteneur_flex un_filtre">
+                    
+                    <div><i class="fas fa-child-reaching icone_filtre"></i></div>
+                    <div >
+                        <button class="btn_filtre" onclick="alert('Familial !');">Familial</button>
+                    </div>
+                </div>
+                <div  class="conteneur_flex un_filtre">
+                    
+                    <div><i class="fas fa-map-marker-alt icone_filtre"></i></div>
+                    <div >
+                        <button class="btn_filtre" onclick="alert('Romantique !');">Romantique</button>
+                    </div>
+                </div>
+                <div  class="conteneur_flex un_filtre">
+                    
+                    <div><i class="fas fa-map-marker-alt icone_filtre"></i></div>
+                    <div >
+                        <button class="btn_filtre" onclick="alert('Animaux autorisés !');">Animaux autorisés</button>
+                    </div>
+                </div>
+            </div>   
+                <!--Icone plus texte-->
+                <div id="div_nb_logements" class="conteneur_flex">
+                    <div class="i_position"><i class="fas fa-map-marker-alt icon"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+           
         </section>
 
         <!--Section 2 Hébergements-->
         <section class="marge_gauche conteneur_flex" id="sec_hebergement">
 
             <!--sous section Hébergement à... -->
-            <div id="div_hebergements" class="conteneur_flex">
+            <div id="div_hebergements" class="conteneur_flex debug">
                 <h2>Hébergement à Marseille</h2>
                 <!--6 hébergements-->
                 <div id="div_hotels" class="conteneur_flex">
-                    <div class="cadre_hebergement" >
+                    <div class="cadre_hebergement debug" >
                     
                         <a href="">
                             <img class="img_hebergement" src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hötel du port"/>
@@ -93,7 +120,7 @@
                        
                     </div>
                     
-                    <div class="cadre_hebergement" >
+                    <div class="cadre_hebergement debug" >
                         <a href="">
                             <!--<div id="img_heb2>"></div>-->
                             <img class="img_hebergement" src="Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hötel du port"/>
@@ -102,7 +129,7 @@
                         <p>Nuit à partir de 52€</p>
                         <!--Etoiles ??-->
                     </div>
-                    <div class="cadre_hebergement" >
+                    <div class="cadre_hebergement debug" >
                         <a href="">
                             <div id="img_heb3>"></div>
                         </a>   
@@ -110,7 +137,7 @@
                         <p>Nuit à partir de 75€</p>
                         <!--Etoiles ??-->
                     </div>
-                    <div class="cadre_hebergement" >
+                    <div class="cadre_hebergement debug" >
                         <a href="">
                             <div id="img_heb4>"></div>
                         </a>   
@@ -119,7 +146,7 @@
                         <!--Etoiles ??-->
                         </a>
                     </div>
-                    <div class="cadre_hebergement" >
+                    <div class="cadre_hebergement debug" >
                         <a href="">
                             <div id="img_heb5>"></div>
                         </a>   
@@ -127,7 +154,7 @@
                         <p>Nuit à partir de 23€</p>
                         <!--Etoiles ??-->
                     </div>
-                    <div class="cadre_hebergement" >
+                    <div class="cadre_hebergement debug" >
                         <a href="">
                             <div id="img_heb6>"></div>
                         </a>   
@@ -142,7 +169,7 @@
             <!--Sous section Les plus populaires-->
             <div id="div_populaires">
                 <h2>Les plus populaires</h2>
-                <div class="cadre_hebergement" class="populaire">
+                <div class="cadre_hebergement populaire debug">
                     <div id="img_heb1>"></div>
                     <div>
                         <h3>Hôtel le soleil du mation</h3>
