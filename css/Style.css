@@ -8,7 +8,9 @@
  .debug{
     border: 2px solid rgb(89, 9, 9);
  }
-
+ .debug1{
+    border: 2px solid rgb(61, 158, 34);
+ }
  .marge_gauche{
     margin-left: 4%;
  }
@@ -23,8 +25,8 @@
     color: #F2F2F2;
 }
 .font_gris2{
-   /* color: #757171;*/
-   color: green;
+    color: #757171;
+   /*color: green;*/
 }
 .font_style_gras{
     font-weight: bold;
@@ -144,7 +146,6 @@
 /* HEBERGEMENT */
 #div_infos_logements{
     margin-top: 15px;
-
 }
 .i_position{
     padding-top: 10px;
@@ -248,19 +249,68 @@
 /* ACTIVITES*/
 #div_sec_activites{
     flex-direction: column;
+    margin-top: 50px;
 }
 #div_les_activites{
-    flex-direction: row;
+   flex-direction: row;
+   flex-wrap: wrap;
+    margin-right: 3.4%;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    /*width: 95%;*/
 }
 .une_activite{
-   width: 20%;
-   height: 600px; 
+   width: 23%; 
+   flex-direction: column;
+   /*flex-wrap: wrap;*/
+   justify-content: space-between;
+  /* height: 600px; */
    overflow: hidden;
+   
+}
+.img_a{
+    width: 345px;
+    border-radius: 8%;
+    padding-bottom: 60px;
 }
 .img_activite{
-  /* position: absolute;
-   clip-path: rect(50,0,400,600);
-   clip-path: inset(10 200 25 70);*/
-   height: 400px;
-   width: auto;
+   height: 450px;
 }
+
+.img_demi_activite1{
+    height: 215px;
+}
+.img_demi_activite2{
+    height: 130px;
+}
+.img_demi_activite3{
+    height: 170px;
+}
+
+.lib_image{
+    margin-top: -40px;
+    margin-left: 25px;
+}
+
+/* FOOTER*/
+#div_sec_footer{
+    margin-top: 60px;  
+    background-color: #F2F2F2 ;
+    
+}
+.les_listes{
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.liste{
+    margin-top: 20px;
+}
+ul {
+    list-style:none;
+    padding-left:0;
+    }
+li {
+    margin-bottom:15px;
+    }
