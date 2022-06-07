@@ -2,12 +2,53 @@
     box-sizing: border-box; /* Opera/IE 8+ */
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
- }
+ 
+}
 
+ .debug{
+    border: 2px solid rgb(89, 9, 9);
+ }
+ .debug1{
+    border: 2px solid rgb(61, 158, 34);
+ }
  .marge_gauche{
     margin-left: 4%;
  }
- 
+ .conteneur_flex{
+    display: flex;
+    position: relative;
+ }
+.fas{
+    color: #0065fc;
+ }
+.font_gris1{
+    color: #F2F2F2;
+}
+.font_gris2{
+    color: #757171;
+   /*color: green;*/
+}
+.font_style_gras{
+    font-weight: bold;
+}
+.p1{
+    line-height: 0.5em;
+}
+.ombre{
+    box-shadow: 6px 6px 22px rgb(172, 168, 168);
+}
+#id_body{
+    font-family: 'Raleway', sans-serif;
+}
+ #id_conteneur_header{
+     justify-content: space-between;
+     margin-right: 4%;
+ }
+ #id_menu{
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+ }
 #img_logo{
     background-image: url(../images/logo/Booki.png);
     background-repeat: no-repeat;
@@ -15,63 +56,261 @@
     height: 90px;
     padding: 0;
     margin-left: 30px;
+    margin-bottom: 30px;
 }
+
+
+#zone_recherche{
+    background-color: #DEEBFF;
+    color: black;
+    text-align: center;                
+    width:120px;                
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.margin_20{
+    margin: 20px;
+}
+
 #img_position{
-    background-image: url(../images/logo/localisation24.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;
+    background-color: #F2F2F2 ;
+
+  /*  width: 20px;
+    height: 40px;*/
+    color: black;
+    text-align: center;   
+    margin-top: 12px;   
+    margin-right: 10px;               
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-#id_conteneur_header{
-    display: flex;
+.img_fond{
+    background-color: #F2F2F2 ;
 }
-#id_conteneur_recherche{
-    display: flex;
+#btn_recherche{
+    background-color: #0065fc;
+    color: white;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    border-width: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+#id_saisie_recherche{
+    text-align: left;
+    padding-left: 10px;
+    border: #F2F2F2 2px solid;
+    font-size: 18px; 
+    font-weight: bold;
     height: 40px;
+}
+/* FILTRES */
+.les_filtres{
+    flex-direction: row;
+    width: 65%;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.un_filtre{
+   margin-top: 8px;
+   text-align: center;
+   
+}
+.btn_filtre{
+    
+    background-color: white;
+    width: auto;
+    height: 50px;
+ 
+    padding-right: 20px;
+    padding-left: 60px;
+    border: 4px solid #f2f2f2; 
+    border-radius: 25px;
+    
+}
+
+.icone_filtre{
+    position : absolute;
+    background-color: #DEEBFF;
+    width: 50px;
+    height: 35px;
+    padding-top: 15px;
+
+    border-radius: 25px;
+}
+/* HEBERGEMENT */
+#div_infos_logements{
+    margin-top: 15px;
+}
+.i_position{
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.icone_info{
+    padding-top: 8px;
+    padding-left: 12px;
+    background-color: white;
+    height: 22px;
+    width: 18px;
+    border-radius: 50%;
+    border: 1px solid #f2f2f2;
 }
 
 #sec_hebergement{
-    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-#div_hebergements{
-    display: flex;
+#div_les_hebergements{
     flex-direction: column;
     background-color: #f2f2f2;
-    width: 61%;
-   /* height: 500px;*/
+    width: 63%;
     border-radius: 20px;
     padding-top: 20px;
-    padding-left: 30px;
 }
-#div_hotels{
-    display: flex;
+
+#div_les_hotels{
+    margin-top: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#img_heb1{
-    background-image: url(../Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+.un_hotel{
+    position: relative;
+   padding-bottom: 50px;
+   
+}
+.img_hotel{
+    width: 260px;
+    height: 130px;
+    padding-bottom: 90px;
+    border-radius: 10%;
+   /* border: 6px solid rgb(27, 153, 65);*/
+   border: 6px solid white;
+    background-color: white;
+}
+.info_hotel{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 130px;
 }
 
-#div_populaires{
-    /*margin-left: 6.2%;*/
+/* POPULAIRES*/
+#div_les_populaires{
     margin-right: 3.4%;
     background-color: #f2f2f2;
-    width: 27.8%;
-    height: 500px;
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 30px;
+   
 }
-.cadre_hebergement{
-    border: 10px;
-    border-color: rgb(89, 9, 9);
-    border-radius: 20px;
-    width: 300px;
+#div_lib_populaires{
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.fa{
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.un_populaire{
+    position: relative;
+    /*border-radius: 20px;*/
+    width: 450px;
     height: 200px;
     padding-top: 10px;
     padding-bottom:  20px;
+
 }
+.img_populaire{
+    width: 170px;
+    height: 180px;
+    padding-right: 230px;
+    border-radius: 8%;
+   /* border: 6px solid rgb(27, 153, 65);*/
+   border: 6px solid white;
+    background-color: white;
+}
+.info_populaire{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 10px;
+
+}
+.etoiles_populaires{
+    padding-top: 40px;
+}
+/* ACTIVITES*/
+#div_sec_activites{
+    flex-direction: column;
+    margin-top: 50px;
+}
+#div_les_activites{
+   flex-direction: row;
+   flex-wrap: wrap;
+    margin-right: 3.4%;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    /*width: 95%;*/
+}
+.une_activite{
+   width: 23%; 
+   flex-direction: column;
+   /*flex-wrap: wrap;*/
+   justify-content: space-between;
+  /* height: 600px; */
+   overflow: hidden;
+   
+}
+.img_a{
+    width: 345px;
+    border-radius: 8%;
+    padding-bottom: 60px;
+}
+.img_activite{
+   height: 450px;
+}
+
+.img_demi_activite1{
+    height: 215px;
+}
+.img_demi_activite2{
+    height: 130px;
+}
+.img_demi_activite3{
+    height: 170px;
+}
+
+.lib_image{
+    margin-top: -40px;
+    margin-left: 25px;
+}
+
+/* FOOTER*/
+#div_sec_footer{
+    margin-top: 60px;  
+    background-color: #F2F2F2 ;
+    
+}
+.les_listes{
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.liste{
+    margin-top: 20px;
+}
+ul {
+    list-style:none;
+    padding-left:0;
+    }
+li {
+    margin-bottom:15px;
+    }
