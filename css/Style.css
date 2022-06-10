@@ -198,7 +198,7 @@ button:hover{
 
 .un_hotel:hover{
     text-decoration: none;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .img_hotel{
@@ -281,8 +281,12 @@ button:hover{
     margin-left: 20px;
 
 }
-a{
+section a{
     text-decoration: none;
+}
+a:visited {
+    text-decoration: none; 
+    color: #757171;
 }
 .une_activite{
     width: 23%;
@@ -300,13 +304,11 @@ a{
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
- 
 img{
     height: 400px;
     width: 100%;
     object-fit: cover;
 }
-
 .activite_deux_img{
     border-radius: 15px;
     overflow: hidden;
@@ -360,22 +362,88 @@ li {
     }
 
   /*----  MEDIA QUERIES   ----*/
-  @media screen and (max-width: 900px)
+  @media screen and (max-width: 800px)
   {
+      /*
     body{
-        background-color: red;
+       background-color: red;
     }
-    #img_logo{
-        justify-content: center;
-    }
-    #id_conteneur_header{
-    
-        flex-direction: column;
-        justify-content: center;
-        
-    }
-    
-}
-
+    */
   
-
+    #id_conteneur_header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #btn_recherche{
+        display: none;
+       /* width: 50px;
+        border-radius: 15px;
+        */
+    }
+    
+    /* icone loupe*/
+    .fa-magnifying-glass{
+        color: #DEEBFF;
+        font-size: 35px;
+    }
+    .les_filtres{
+        flex-direction: column;
+    }
+    h1.p1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .btn_filtre{
+        font-size: 18px;
+    }
+    #sec_hebergement{
+        flex-direction: column-reverse;
+    }
+    #div_les_hebergements{
+        margin-top: 30px;
+        width: 96%;
+        background-color: white;
+    }
+    
+    .un_hotel{
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+    
+    .img_hotel{
+        width: 410px;
+    }
+    #div_les_populaires{
+        border-radius: 0px;
+    }
+  
+    .un_populaire{
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+ 
+    .une_activite{
+        width: 420px;
+        margin-top: 30px;
+    }
+    img{
+        height: 180px;
+    }
+    .activite_img_1{
+        height: 180px;
+        margin-top: 30px;
+    }
+    .activite_img_2{
+        height: 180px;
+        margin-top: 30px;
+    }
+    .activite_img_3{
+        height: 180px;
+        margin-top: 30px;
+    }
+    .les_listes{
+       /* width: 420px;*/
+        flex-direction: column;
+        margin-left: 30px;
+    }
+}
