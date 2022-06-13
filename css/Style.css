@@ -24,9 +24,11 @@
 .font_gris1{
     color: #F2F2F2;
 }
+/*
 .font_gris2{
     color: #757171;
 }
+*/
 h3{
     color: black;
 }
@@ -52,8 +54,6 @@ h3{
     justify-content: space-between;
  }
 #img_logo{
-    background-image: url(../images/logo/Booki.png);
-    background-repeat: no-repeat;
     width: 191px;
     height: 90px;
     padding: 0;
@@ -281,12 +281,16 @@ button:hover{
     margin-left: 20px;
 
 }
+a{
+    color: black;
+}
 section a{
     text-decoration: none;
+    
 }
 a:visited {
     text-decoration: none; 
-    color: #757171;
+   /* color: #757171;*/
 }
 .une_activite{
     width: 23%;
@@ -305,6 +309,7 @@ a:visited {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 img{
+    
     height: 400px;
     width: 100%;
     object-fit: cover;
@@ -369,7 +374,41 @@ li {
        background-color: red;
     }
     */
-  
+    .marge_gauche{
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    #img_logo{
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+        padding: 0;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+    #id_menu{
+        padding-right: 160px;
+    }
+    #img_logo{
+        padding-left: 100;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    
+    #a_menu_h{
+        border-bottom: 3px solid #0065fc;
+        color: #0065fc;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+    #a_menu_a{
+        border-bottom: 3px solid #f2f2f2;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
     #id_conteneur_header{
         flex-direction: column;
         align-items: center;
@@ -389,10 +428,20 @@ li {
     .les_filtres{
         flex-direction: column;
     }
+
     h1.p1{
         font-size: 24px;
+        line-height: 35px;
         text-align: center;
+        padding-left: 20px;
+        margin-right: 80px;
     }
+     .p2{
+        text-align: center;
+        padding-left: 20px;
+        margin-right: 80px;
+    }
+
     .btn_filtre{
         font-size: 18px;
     }
@@ -401,7 +450,8 @@ li {
     }
     #div_les_hebergements{
         margin-top: 30px;
-        width: 96%;
+        margin-left: 20px;
+        width: 90%;
         background-color: white;
     }
     
@@ -411,15 +461,19 @@ li {
     }
     
     .img_hotel{
-        width: 410px;
+        width: 400px;
     }
     #div_les_populaires{
         border-radius: 0px;
+        width: 90%;
+        
     }
   
     .un_populaire{
+        margin-left: -20px;
         padding-top: 0px;
         padding-bottom: 5px;
+        padding-right: 30px;
     }
  
     .une_activite{
