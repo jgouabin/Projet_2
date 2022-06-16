@@ -48,19 +48,21 @@
             </p>
             <!--zone de recherche-->
             <div id="zone_recherche">
-                <form action="#" method="get" >
+                <form  action="#" method="get" >
                     <!--Icone + zone de saisie + zone bouton. Le tout encadré--> 
                     <div  class="conteneur_flex margin_20">
             
-                        <div id="img_position"><i class="fas fa-map-marker-alt img_fond"></i></div>
+                        <div id="img_position">
+                            <i class="fas fa-map-marker-alt img_fond"></i>
+                        </div>
                         <div >
                             <input type="text" id="id_saisie_recherche" name="saisie_recherche" placeholder="Marseille, France">
                         </div>
                         <div >
                             <button id="btn_recherche" onclick="alert('Coucou !');">Rechercher</button>
                         </div>
-                        <div id="image_loupe">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="icone_recherche_loupe">
+                            <i id="loupe" class="fas fa-search"></i>
                         </div>
                     </div>
                     
@@ -340,7 +342,7 @@
                     </div>
                       
                    
-                    <div class="activite_deux_img debug"> <!--debug-->
+                    <div class="activite_deux_img activite_deux_img_bas debug"> <!--debug-->
                          <a href="#">    
                             <img class="activite_img_2" src="Images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul">
                             <h3>Île du Frioul</h3>
@@ -366,7 +368,7 @@
                         </a>
                     </div>
                     
-                    <div class="activite_deux_img debug">
+                    <div class="activite_deux_img activite_deux_img_bas debug">
                         <a href="#">
                           <img class="activite_img_3" src="Images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                           <h3>Parc Longchamp</h3>

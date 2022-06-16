@@ -101,7 +101,9 @@ h3{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-
+#btn_recherche_loupe{
+    display: none;
+}
 
 #id_saisie_recherche{
     text-align: left;
@@ -277,9 +279,8 @@ button:hover{
     text-decoration: none;
     width: 96%;
 }
-#div_les_activites:h3{
+#div_les_activites h3{
     margin-left: 20px;
-
 }
 a{
     color: black;
@@ -413,18 +414,26 @@ li {
         flex-direction: column;
         align-items: center;
     }
+    #zone_recherche{
+        margin-left: 7%;
+        margin-top: 50px;
+    }
     #btn_recherche{
         display: none;
-       /* width: 50px;
-        border-radius: 15px;
-        */
     }
     
-    /* icone loupe*/
-    .fa-magnifying-glass{
-        color: #DEEBFF;
-        font-size: 35px;
+    .icone_recherche_loupe{
+        border: 1px solid blue;
+        background-color: #0065fc;
+        border-radius: 15px;
+       
     }
+    #loupe{
+         color: white;
+          width: 45px;
+          padding-top: 15px;
+    }
+    
     .les_filtres{
         flex-direction: column;
     }
@@ -478,25 +487,28 @@ li {
  
     .une_activite{
         width: 420px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     img{
         height: 180px;
     }
+    .activite_deux_img_bas{
+        margin-top: 20px;
+    }
+    
     .activite_img_1{
         height: 180px;
-        margin-top: 30px;
     }
     .activite_img_2{
         height: 180px;
-        margin-top: 30px;
     }
     .activite_img_3{
         height: 180px;
-        margin-top: 30px;
+    }
+    .les_listes .marge_gauche{
+        margin-left: 0px;
     }
     .les_listes{
-       /* width: 420px;*/
         flex-direction: column;
         margin-left: 30px;
     }
