@@ -1,10 +1,6 @@
-.box {
-    box-sizing: border-box; /* Opera/IE 8+ */
-    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
- 
-}
-/*bug{
+
+/*
+.debug{
     border: 2px solid rgb(89, 9, 9);
  }
  .debug1{
@@ -101,7 +97,8 @@ h3{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#btn_recherche_loupe{
+
+.icone_recherche_loupe{
     display: none;
 }
 
@@ -291,7 +288,6 @@ section a{
 }
 a:visited {
     text-decoration: none; 
-   /* color: #757171;*/
 }
 .une_activite{
     width: 23%;
@@ -368,13 +364,9 @@ li {
     }
 
   /*----  MEDIA QUERIES   ----*/
-  @media screen and (max-width: 800px)
+  @media screen and (max-width: 768px)
   {
-      /*
-    body{
-       background-color: red;
-    }
-    */
+    
     .marge_gauche{
         margin-left: 10px;
         margin-right: 0px;
@@ -423,6 +415,7 @@ li {
     }
     
     .icone_recherche_loupe{
+        display: flex;
         border: 1px solid blue;
         background-color: #0065fc;
         border-radius: 15px;
