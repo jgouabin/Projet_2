@@ -1,16 +1,16 @@
-.box {
-    box-sizing: border-box; /* Opera/IE 8+ */
-    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
- 
-}
-/*bug{
+
+/*
+.debug{
     border: 2px solid rgb(89, 9, 9);
  }
  .debug1{
     border: 2px solid rgb(61, 158, 34);
  }
  */
+
+ *{
+    text-decoration: none;
+ }
  .marge_gauche{
     margin-left: 4%;
  }
@@ -24,9 +24,11 @@
 .font_gris1{
     color: #F2F2F2;
 }
+/*
 .font_gris2{
     color: #757171;
 }
+*/
 h3{
     color: black;
 }
@@ -52,8 +54,6 @@ h3{
     justify-content: space-between;
  }
 #img_logo{
-    background-image: url(../images/logo/Booki.png);
-    background-repeat: no-repeat;
     width: 191px;
     height: 90px;
     padding: 0;
@@ -78,8 +78,6 @@ h3{
 #img_position{
     background-color: #F2F2F2 ;
 
-  /*  width: 20px;
-    height: 40px;*/
     color: black;
     text-align: center;   
     margin-top: 12px;   
@@ -102,6 +100,9 @@ h3{
     border-bottom-right-radius: 15px;
 }
 
+.icone_recherche_loupe{
+    display: none;
+}
 
 #id_saisie_recherche{
     text-align: left;
@@ -120,7 +121,6 @@ h3{
     justify-content: space-around;
 }
 button:hover{
-    text-decoration: underline;
     background-color: #DEEBFF;
     cursor:pointer;
 }
@@ -167,7 +167,7 @@ button:hover{
     height: 22px;
     width: 18px;
     border-radius: 50%;
-    border: 1px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
 }
 
 #sec_hebergement{
@@ -197,7 +197,6 @@ button:hover{
 }
 
 .un_hotel:hover{
-    text-decoration: none;
     transform: scale(1.03);
 }
 
@@ -206,7 +205,7 @@ button:hover{
     height: 130px;
     object-fit: cover;
     padding-bottom: 90px;
-    border-radius: 10%;   
+    border-radius: 20px;   
     border: 6px solid white;
     background-color: white;
 }
@@ -240,17 +239,15 @@ button:hover{
     height: 200px;
     padding-top: 10px;
     padding-bottom:  20px;
-    text-decoration: none;
 }
 .un_populaire:hover{
-    text-decoration: none;
     transform: scale(1.05);
 }
 .img_populaire{
     width: 170px;
     height: 180px;
     padding-right: 230px;
-    border-radius: 7%;
+    border-radius: 20px;
    border: 6px solid white;
     background-color: white;
 }
@@ -260,7 +257,7 @@ button:hover{
     margin-top: 10px;
 }
 .etoiles_populaires{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 /* ACTIVITES*/
@@ -274,20 +271,16 @@ button:hover{
     margin-right: 3.4%;
     padding-bottom: 20px;
     justify-content: space-between;
-    text-decoration: none;
     width: 96%;
 }
-#div_les_activites:h3{
+#div_les_activites h3{
     margin-left: 20px;
+}
+a{
+    color: black;
+}
 
-}
-section a{
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none; 
-    color: #757171;
-}
+
 .une_activite{
     width: 23%;
     min-width: 300px;
@@ -300,11 +293,12 @@ a:visited {
 }
 
 .activite_une_img{
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 img{
+    
     height: 400px;
     width: 100%;
     object-fit: cover;
@@ -315,11 +309,9 @@ img{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .activite_une_img:hover{
-    text-decoration: none;
     transform: scale(1.03);
 }
 .activite_deux_img:hover{
-    text-decoration: none;
     transform: scale(1.03);
 }
 .activite_img_1{
@@ -362,37 +354,83 @@ li {
     }
 
   /*----  MEDIA QUERIES   ----*/
-  @media screen and (max-width: 800px)
+  @media screen and (max-width: 768px)
   {
-      /*
-    body{
-       background-color: red;
+    
+    .marge_gauche{
+        margin-left: 10px;
+        margin-right: 0px;
     }
-    */
-  
+    #img_logo{
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+        padding: 0;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+    #id_menu{
+        padding-right: 160px;
+    }
+    #img_logo{
+        padding-left: 100;
+    }
+    
+    #a_menu_h{
+        border-bottom: 3px solid #0065fc;
+        color: #0065fc;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+    #a_menu_a{
+        border-bottom: 3px solid #f2f2f2;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
     #id_conteneur_header{
         flex-direction: column;
         align-items: center;
     }
+    #zone_recherche{
+        margin-left: 7%;
+        margin-top: 50px;
+    }
     #btn_recherche{
         display: none;
-       /* width: 50px;
-        border-radius: 15px;
-        */
     }
     
-    /* icone loupe*/
-    .fa-magnifying-glass{
-        color: #DEEBFF;
-        font-size: 35px;
+    .icone_recherche_loupe{
+        display: flex;
+        border: 1px solid blue;
+        background-color: #0065fc;
+        border-radius: 15px;
+       
     }
+    #loupe{
+         color: white;
+          width: 45px;
+          padding-top: 15px;
+    }
+    
     .les_filtres{
         flex-direction: column;
     }
+
     h1.p1{
         font-size: 24px;
+        line-height: 35px;
         text-align: center;
+        padding-left: 20px;
+        margin-right: 80px;
     }
+     .p2{
+        text-align: center;
+        padding-left: 20px;
+        margin-right: 80px;
+    }
+
     .btn_filtre{
         font-size: 18px;
     }
@@ -401,7 +439,8 @@ li {
     }
     #div_les_hebergements{
         margin-top: 30px;
-        width: 96%;
+        margin-left: 20px;
+        width: 90%;
         background-color: white;
     }
     
@@ -411,38 +450,45 @@ li {
     }
     
     .img_hotel{
-        width: 410px;
+        width: 400px;
     }
     #div_les_populaires{
         border-radius: 0px;
+        width: 90%;
+        
     }
   
     .un_populaire{
+        margin-left: -20px;
         padding-top: 0px;
         padding-bottom: 5px;
+        padding-right: 30px;
     }
  
     .une_activite{
         width: 420px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     img{
         height: 180px;
     }
+    .activite_deux_img_bas{
+        margin-top: 20px;
+    }
+    
     .activite_img_1{
         height: 180px;
-        margin-top: 30px;
     }
     .activite_img_2{
         height: 180px;
-        margin-top: 30px;
     }
     .activite_img_3{
         height: 180px;
-        margin-top: 30px;
+    }
+    .les_listes .marge_gauche{
+        margin-left: 0px;
     }
     .les_listes{
-       /* width: 420px;*/
         flex-direction: column;
         margin-left: 30px;
     }
