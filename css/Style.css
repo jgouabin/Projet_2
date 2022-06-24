@@ -7,6 +7,10 @@
     border: 2px solid rgb(61, 158, 34);
  }
  */
+
+ *{
+    text-decoration: none;
+ }
  .marge_gauche{
     margin-left: 4%;
  }
@@ -117,7 +121,6 @@ h3{
     justify-content: space-around;
 }
 button:hover{
-    text-decoration: underline;
     background-color: #DEEBFF;
     cursor:pointer;
 }
@@ -194,7 +197,6 @@ button:hover{
 }
 
 .un_hotel:hover{
-    text-decoration: none;
     transform: scale(1.03);
 }
 
@@ -203,7 +205,7 @@ button:hover{
     height: 130px;
     object-fit: cover;
     padding-bottom: 90px;
-    border-radius: 10%;   
+    border-radius: 20px;   
     border: 6px solid white;
     background-color: white;
 }
@@ -237,17 +239,15 @@ button:hover{
     height: 200px;
     padding-top: 10px;
     padding-bottom:  20px;
-    text-decoration: none;
 }
 .un_populaire:hover{
-    text-decoration: none;
     transform: scale(1.05);
 }
 .img_populaire{
     width: 170px;
     height: 180px;
     padding-right: 230px;
-    border-radius: 7%;
+    border-radius: 20px;
    border: 6px solid white;
     background-color: white;
 }
@@ -271,7 +271,6 @@ button:hover{
     margin-right: 3.4%;
     padding-bottom: 20px;
     justify-content: space-between;
-    text-decoration: none;
     width: 96%;
 }
 #div_les_activites h3{
@@ -280,13 +279,8 @@ button:hover{
 a{
     color: black;
 }
-section a{
-    text-decoration: none;
-    
-}
-a:visited {
-    text-decoration: none; 
-}
+
+
 .une_activite{
     width: 23%;
     min-width: 300px;
@@ -299,7 +293,7 @@ a:visited {
 }
 
 .activite_une_img{
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -315,11 +309,9 @@ img{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .activite_une_img:hover{
-    text-decoration: none;
     transform: scale(1.03);
 }
 .activite_deux_img:hover{
-    text-decoration: none;
     transform: scale(1.03);
 }
 .activite_img_1{
@@ -382,9 +374,6 @@ li {
     }
     #img_logo{
         padding-left: 100;
-    }
-    nav a{
-        text-decoration: none;
     }
     
     #a_menu_h{
