@@ -12,7 +12,7 @@
     text-decoration: none;
  }
  .marge_gauche{
-    margin-left: 4%;
+    margin-left: 2%;
  }
  .conteneur_flex{
     display: flex;
@@ -24,11 +24,7 @@
 .font_gris1{
     color: #F2F2F2;
 }
-/*
-.font_gris2{
-    color: #757171;
-}
-*/
+
 h3{
     color: black;
 }
@@ -66,7 +62,8 @@ h3{
     background-color: #DEEBFF;
     color: black;
     text-align: center;                
-    width:120px;                
+    /*width:120px;  */   
+    width: 25%;           
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -179,7 +176,7 @@ button:hover{
 #div_les_hebergements{
     flex-direction: column;
     background-color: #f2f2f2;
-    width: 63%;
+    width: 65%;
     border-radius: 20px;
     padding-top: 20px;
 }
@@ -218,11 +215,13 @@ button:hover{
 
 /* POPULAIRES*/
 #div_les_populaires{
-    margin-right: 3.4%;
+   /* margin-right: 3.4%;*/
+   margin-right: 20px;
+   width: 30%;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding-top: 20px;
-    padding-left: 30px;
+    padding-left: 25px;
    
 }
 #div_lib_populaires{
@@ -235,7 +234,8 @@ button:hover{
 }
 .un_populaire{
     position: relative;
-    width: 450px;
+   /* width: 450px;*/
+   width: 90%;
     height: 200px;
     padding-top: 10px;
     padding-bottom:  20px;
@@ -244,7 +244,8 @@ button:hover{
     transform: scale(1.05);
 }
 .img_populaire{
-    width: 170px;
+   /* width: 170px;*/
+   width: 40%;
     height: 180px;
     padding-right: 230px;
     border-radius: 20px;
@@ -258,6 +259,7 @@ button:hover{
 }
 .etoiles_populaires{
     padding-top: 30px;
+    padding-left: 20px;
 }
 
 /* ACTIVITES*/
@@ -476,6 +478,10 @@ li {
         margin-top: 20px;
     }
     
+    #div_les_activites img{
+        height: 180px;
+    }
+    /*
     .activite_img_1{
         height: 180px;
     }
@@ -485,6 +491,7 @@ li {
     .activite_img_3{
         height: 180px;
     }
+    */
     .les_listes .marge_gauche{
         margin-left: 0px;
     }
