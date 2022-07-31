@@ -11,62 +11,50 @@
             commentaire
         -->
 
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/97cc6df2cc.js" crossorigin="anonymous"></script>
     </head>
     <body id="id_body">
         <!--Header--> 
-        <header class="marge_gauche conteneur_flex"  id="id_conteneur_header">
-            <!--Image-->
-            <div >
-                <img id="img_logo" src="images/logo/Booki.png" alt="logo Booki"/>
-            </div>
-            
-            <!--Menu-->
-            <div>
-                <nav id="id_menu" class="conteneur_flex debug">
-                    
-                        <div id="menu_h">
-                        <p>
-                            <a id="a_menu_h" class="menu1" href="#div_les_hebergements" >Hébergement</a>
-                        </p>
-                        </div>
-                        <div id="menu_a">
-                        <p>
-                            <a id="a_menu_a" class="menu1" href="#div_les_activites" >Activités</a>
-                        </p>
-                        </div>
-                    
+    
+        <header  class="marge_gauche">
+            <div class="div_bar_navigation conteneur_flex debug">
+                <img src="images/logo/Booki.png" alt="Logo Booki">
+                <nav>
+                    <a href="#Hébergements">Hébergements</a>
+                    <a href="#Activités">Activités</a>
                 </nav>
             </div>
+           <!--zone de texte-->
+           <h2>Trouvez votre hébergement pour des vacances de rève</h2>
+           <p  class="p2">En plein centre ville ou en pleine nature </p>
         </header>
 
         <!--Section 1 Trouvez votre hébergement...-->
         <section class="marge_gauche">
-            <!--zone de texte-->
-            <h2>Trouvez votre hébergement pour des vacances de rève</h2>
-            <p  class="p2">En plein centre ville ou en pleine nature 
-            </p>
+            
             <!--zone de recherche-->
             <div class="section_recherche">
                 <!--form  action="#" method="get" -->
-                    <!--Icone + zone de saisie + zone bouton. Le tout encadré--> 
-                    <div  class="zone_recherche conteneur_flex">
-            
-                        <div id="div_icone">
-                            <i class="fas fa-map-marker-alt img_fond"></i >
-                           
-                        </div>
-                        <div id="div_recherche" classe="debug">
-                            <input id="saisie_recherche" type="text"  name="saisie_recherche"  placeholder= " Marseille, France" > 
-                        </div>
-                        <div id="div_btn_recherche"  >
-                            <button id="btn_recherche" onclick="alert('Coucou !');">Rechercher</button>
-                        </div>
-                        <div id="div_recherche_loupe">
-                            <i id="loupe" class="fas fa-search"></i>
-                        </div>
+                <!--Icone + zone de saisie + zone bouton. Le tout encadré--> 
+                <div  class="zone_recherche conteneur_flex">
+        
+                    <div id="div_icone">
+                        <i class="fas fa-map-marker-alt img_fond"></i >
+                        
                     </div>
+                    <div id="div_recherche" classe="debug">
+                        <input id="saisie_recherche" type="text"  name="saisie_recherche"  placeholder= " Marseille, France" > 
+                    </div>
+                    <div id="div_btn_recherche"  >
+                        <button id="btn_recherche" onclick="alert('Coucou !');">Rechercher</button>
+                    </div>
+                    <div id="div_recherche_loupe">
+                        <i id="loupe" class="fas fa-search"></i>
+                    </div>
+                </div>
                     
                 <!--/form -->
             </div>
@@ -74,33 +62,34 @@
             <div class="conteneur_flex les_filtres">
               
                 <p>Filtres</p>
-
-                <div  class="conteneur_flex un_filtre">
-                    
-                    <div><i class="fas fa-money-bill-wave icone_filtre"></i></div>
-                    <div >
-                        <button class="btn_filtre" onclick="alert('Economique !');">Economique</button>
+                <div class="les_btn_filtres conteneur_flex">
+                    <div  class="conteneur_flex un_filtre">
+                        
+                        <div><i class="fas fa-money-bill-wave icone_filtre"></i></div>
+                        <div >
+                            <button class="btn_filtre" onclick="alert('Economique !');">Economique</button>
+                        </div>
                     </div>
-                </div>
-                <div  class="conteneur_flex un_filtre">
-                    
-                    <div><i class="fas fa-child icone_filtre"></i></div>
-                    <div >
-                        <button class="btn_filtre" onclick="alert('Familial !');">Familial</button>
+                    <div  class="conteneur_flex un_filtre">
+                        
+                        <div><i class="fas fa-child icone_filtre"></i></div>
+                        <div >
+                            <button class="btn_filtre" onclick="alert('Familial !');">Familial</button>
+                        </div>
                     </div>
-                </div>
-                <div  class="conteneur_flex un_filtre">
-                    
-                    <div><i class="fas fa-heart icone_filtre"></i></div>
-                    <div >
-                        <button class="btn_filtre" onclick="alert('Romantique !');">Romantique</button>
+                    <div  class="conteneur_flex un_filtre">
+                        
+                        <div><i class="fas fa-heart icone_filtre"></i></div>
+                        <div >
+                            <button class="btn_filtre" onclick="alert('Romantique !');">Romantique</button>
+                        </div>
                     </div>
-                </div>
-                <div  class="conteneur_flex un_filtre">
-                    
-                    <div><i class="fas fa-dog icone_filtre"></i></div>
-                    <div >
-                        <button class="btn_filtre" onclick="alert('Animaux autorisés !');">Animaux autorisés</button>
+                    <div  class="conteneur_flex un_filtre">
+                        
+                        <div><i class="fas fa-dog icone_filtre"></i></div>
+                        <div >
+                            <button class="btn_filtre" onclick="alert('Animaux autorisés !');">Animaux autorisés</button>
+                        </div>
                     </div>
                 </div>
             </div>   
@@ -254,6 +243,7 @@
            
             <!--Sous section Les plus populaires-->
             <div class="conteneur_flex" id="div_les_populaires" >
+              
                 <div class="conteneur_flex" id="div_lib_populaires">
                     <h3>Les plus populaires</h3>
                     <div><i class="fa fa-solid fa-star"></i></div>

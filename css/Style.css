@@ -1,12 +1,12 @@
 
-
+/*
 .debug{
      border: 2px solid rgb(89, 9, 9); 
  }
  .debug1{
      border: 3px solid rgb(61, 158, 34); 
  }
- 
+ */
 
  *{
     text-decoration: none;
@@ -33,6 +33,9 @@
 .p1{
     line-height: 0.5em;
 }
+header h2{
+    margin-bottom: 0px;
+}
 #sec_hebergement p{
     font-size: 13px;
 }
@@ -42,41 +45,26 @@
 #id_body{
     font-family: 'Raleway', sans-serif;
 }
- #id_conteneur_header{
-     justify-content: space-between;
-     margin-right: 4%;
- }
- #id_menu{
-    margin-top: 30px;
-    flex-direction: row;
-    width: 350px;
-    justify-content: space-around;
-   
- }
- 
- .menu1:hover{
-    border-top: 3px solid #0065fc;
-    padding-top: 42px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #0065fc;
- }
 
-/*
-#a_menu_h{
-    border-top: 3px solid #0065fc;
-    padding-top: 35px;
-    color: #0065fc;
-}
-*/
-#img_logo{
-    width: 191px;
-    height: 90px;
-    padding: 0;
-    margin-left: 30px;
-    margin-bottom: 30px;
+.div_bar_navigation {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
 
+.div_bar_navigation img {
+    padding-left: 30px;
+    width: 120px;
+}
+
+.div_bar_navigation a {
+    padding: 38px 40px 38px 40px;
+}
+
+.div_bar_navigation a:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+}
 
 .margin_20{
    margin-left: 20px;
@@ -87,13 +75,13 @@
     display: none;
 }
 .section_recherche{
-    width: 30%;
+    width: 33%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 .zone_recherche{
     width: 100%;
-    height: 45px;
+    height: 50px;
     min-width: 320px;
  }
  #div_icone{
@@ -106,7 +94,7 @@
  }
  .img_fond{
     color: black;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 #div_recherche{
@@ -117,9 +105,10 @@
     width: 100%;
     height: 100%;
     border: 2px solid #F2F2F2;
+    font-size: 17px;
 }
 #saisie_recherche::placeholder{
-    font: bold;
+    font-weight: bold;
 }
 #div_btn_recherche{
     height: 100%;
@@ -133,20 +122,27 @@
     color: white;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
 }
 #div_recherche_loupe{
     display: none;
 }
 /* FILTRES
 **************** */
-
+.les_btn_filtres{
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    
+}
 .les_filtres{
     flex-direction: row;
-    width: 70%;
-    font-size: 20px;
+    font-size: 17px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /*align-items: center;*/
+    gap: 20px;
+    row-gap: 0;
+    font-weight: bold;
 }
 
 button:hover{
@@ -155,21 +151,18 @@ button:hover{
 }
 
 .un_filtre{
-   margin-top: 8px;
    text-align: center;
    
 }
 .btn_filtre{
-    
     background-color: white;
     width: auto;
     height: 50px;
- 
     padding-right: 20px;
     padding-left: 60px;
     border: 4px solid #f2f2f2; 
     border-radius: 25px;
-    
+    font-weight: 600;
 }
 
 .icone_filtre{
@@ -246,7 +239,9 @@ button:hover{
     margin-left: 20px;
     margin-top: 130px;
 }
-
+.info_hotel h4{
+    margin-bottom: 15px;
+}
 /* POPULAIRES
 ******************/
 .fa{
@@ -277,8 +272,8 @@ button:hover{
     width: 90%;
     border-radius: 20px;
     height: 160px;
-    margin-top: 25px;
-   /* margin-bottom: 10px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 6px solid white;
     margin-left: 10px;
     background-color: white;
@@ -290,11 +285,14 @@ button:hover{
     /*width: 60%;*/
     flex-direction: column;
     flex-grow: 1;
+    justify-content: space-between;
 }
 .info_texte{
     margin-left: 10px ;
 }
-
+.info_texte h4{
+    margin-top: 10px;
+}
 .une_image_populaire{
     width: 40%;
     object-fit: cover;
@@ -313,7 +311,7 @@ button:hover{
     margin-right: 3.4%;
     padding-bottom: 20px;
     justify-content: space-between;
-    width: 96%;
+   /* width: 96%;*/
 }
 #div_les_activites h4{
     margin-left: 20px;
@@ -324,7 +322,7 @@ a{
 
 
 .une_activite{
-    width: 23%;
+    width: 24%;
     min-width: 300px;
     
 }
@@ -405,40 +403,48 @@ li {
         margin-left: 10px;
         margin-right: 0px;
     }
-    #img_logo{
+    
+   .div_bar_navigation {
+    flex-direction: column;
+    height: auto;
+    }
+
+    /* ajustement du logo */
+    .div_bar_navigation img {
         width: 100px;
-        height: auto;
-        object-fit: contain;
-        padding: 0;
-        margin-left: 60px;
         margin-bottom: 30px;
+        /*padding-left: 50px;*/
+       /* justify-content: center;*/
     }
-    #id_menu{
-        /*padding-right: 160px;*/
-        margin-top: 0px;
-        justify-content:space-around;
+*/
+    .div_bar_navigation nav {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
-    #img_logo{
-        padding-left: 100;
+
+    .div_bar_navigation nav a {
+        border-bottom: 3px solid #F2F2F2 ;
+        width: 50%;
+        padding-bottom: 10px;
+        padding-top: 15px;
     }
-    
-    .menu1:hover{
- 
+
+    .div_bar_navigation nav a:hover {
+        border-bottom: 3px solid #0065fc ;
         border-top: none;
-        padding-top: none;
-        border-bottom: 3px solid #0065fc;
-        color: #0065fc;
-        padding-bottom: 10px
     }
-    
-    #id_conteneur_header{
-        flex-direction: column;
-        align-items: center;
+    header{
+        text-align: center;
     }
-   
+    header h2{
+        margin-top: 50px;
+    }
     .zone_recherche{
         justify-content: space-around;
        margin-top: 40px;
+       margin-left: 20px;
     }
     #div_recherche{
         width: 75%;
@@ -468,6 +474,7 @@ li {
 
     .les_filtres{
         flex-direction: column;
+        margin-left: 20px;
     }
 
     h1.p1{
@@ -482,9 +489,14 @@ li {
         padding-left: 20px;
         margin-right: 0px;
     }
+    
 
     .btn_filtre{
         font-size: 18px;
+    }
+
+    #div_infos_logements{
+        margin-left: 20px;
     }
     #sec_hebergement{
         flex-direction: column-reverse;
@@ -509,20 +521,9 @@ li {
     }
     
     .info_populaire{
-       /* width: 40%; 
-        padding-left: 30%;       
-        margin-left: 20%;*/
         font-size: 16px;
     }
-    /*
-    .un_populaire{        
-        padding-top: 0px;
-        padding-bottom: 5px;
-        padding-right: 30px;
-       
-        width: 90%;
-    }
-    */
+    
   
    #div_les_activites{
         width: 90%;
@@ -532,11 +533,7 @@ li {
         width: 100%;
         margin-top: 20px;
     }
-    /*
-    img{
-        height: 180px;
-    }
-    */
+    
     .activite_deux_img_bas{
         margin-top: 20px;
     }
